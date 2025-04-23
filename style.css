@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #fffafc;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  background: linear-gradient(to right, #fbd3e9, #bbd2c5);
+  color: #4a4a4a;
+  text-align: center;
+  padding: 30px 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+header h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 1.2em;
+  font-style: italic;
+}
+
+/* Navigation */
+.navbar {
+  display: flex;
+  justify-content: center;
+  background-color: #e3e3e3;
+  padding: 10px 0;
+}
+
+.navbar a {
+  padding: 12px 18px;
+  color: #4a4a4a;
+  text-decoration: none;
+  font-weight: 500;
+  border-radius: 8px;
+  margin: 0 10px;
+  transition: all 0.3s ease;
+}
+
+.navbar a:hover {
+  background-color: #fcefe3;
+  color: #d36c6c;
+}
+
+/* Profile Photo Block */
+.profile-photo {
+  display: flex;
+  justify-content: center;
+  margin: 30px 0 10px 0;
+}
+
+.profile-photo img {
+  width: 180px;
+  height: auto;
+  border-radius: 50%;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.profile-photo img:hover {
+  transform: scale(1.05);
+}
+
+/* Sections */
+.section {
+  background-color: #fff;
+  padding: 30px 20px;
+  margin: 30px 10px;
+  border-radius: 10px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  text-align: left;
+}
+
+.section h2 {
+  font-size: 1.8em;
+  margin-bottom: 15px;
+  color: #d36c6c;
+}
+
+ul {
+  padding-left: 20px;
+  list-style-type: circle;
+}
+
+/* Footer */
+footer {
+  background-color: #f0f0f0;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9em;
+  color: #555;
+  border-top: 1px solid #ccc;
+}
+
+footer a {
+  color: #d36c6c;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .section {
+    margin: 20px;
+    padding: 20px;
+  }
+}
